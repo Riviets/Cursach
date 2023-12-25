@@ -3,7 +3,7 @@
     height: 200px;
     border-radius: 10px;
     padding: 20px 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     position: relative;
     overflow: auto;
     font-family: $ubuntu;
@@ -31,7 +31,7 @@
 
         &__email {
             font-size: 14px;
-            color: #7E7E7E;
+            color: var(--color-grey);
             margin-top: -4px;
         }
     }
@@ -55,7 +55,7 @@
         font-family: $raleway;
         font-size: 18px;
         font-weight: 500;
-        color: #5421E3;
+        color: var(--color-purple);
     }
 
     .topic {
@@ -71,32 +71,32 @@
         position: absolute;
         top: 10px;
         left: 200px;
-        border: 1px solid #7E7E7E;
+        border: 1px solid var(--color-grey);
         border-top: none;
         border-left: none;
 
         &-personal {
-            background-color: #9BB0FB;
+            background-color: var(--color-header);
         }
 
         &-nature {
-            background-color: #92FF88;
+            background-color: var(--color-light-green);
         }
 
         &-movies {
-            background-color: #FFDA17;
+            background-color: var(--color-lemon);
         }
 
         &-books {
-            background-color: #349CFB;
+            background-color: var(--color-blue);
         }
 
         &-philosophy {
-            background-color: #FFFDD5;
+            background-color: var(--color-yellow);
         }
 
         &-studiyng {
-            background-color: #FF90F4;
+            background-color: var(--color-pink);
         }
     }
 

@@ -1,5 +1,5 @@
 .header {
-    background-color: #A2A0F7;
+    background-color: var(--color-header);
     padding: 12px 80px;
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@
 
     &__item {
         font-size: 24px;
-        color: #FFFFFF;
+        color: var(--color-white);
         font-family: $raleway;
         font-weight: 500;
         transition: .5s;
@@ -27,8 +27,8 @@
         padding-bottom: 5px;
 
         &:hover {
-            border-bottom: 3px solid #EBFF00;
-            color: #EBFF00;
+            border-bottom: 3px solid var(--color-lemon);
+            color: var(--color-lemon);
         }
     }
 
@@ -40,9 +40,9 @@
 
     &__link {
         &-active {
-            padding-bottom: 5px;
-            border-bottom: 3px solid #EBFF00;
-            color: #EBFF00;
+            padding-bottom: 5pvar(--color-lemon);
+            border-bottom: 3px solid var(--color-lemon);
+            color: var(--color-lemon);
         }
     }
 }

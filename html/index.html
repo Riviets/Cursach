@@ -131,17 +131,17 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <h2 class="modal__title">Log In</h2>
-        <form class="form" action="#">
+        <form class="form" action="#" autocomplete="off">
           <div class="modal__field">
             <label class="label visually-hidden" for="email">Email Address</label>
-            <input class="input" id="email" name="email" type="email" placeholder="Email Address">
+            <input class="input" id="email" name="email" type="email" placeholder="Email Address" required>
           </div>
           <div class="modal__field">
             <label class="label visually-hidden" for="email">Password</label>
-            <input class="input" id="password" name="password" type="password" placeholder="Password">
+            <input class="input" id="password" name="password" type="password" placeholder="Password" minlength="6" maxlength="20" required>
           </div>
           <p class="form__link-text">Don’t have an account? <a class="form__link" href="#">Sign Up</a> </p>
-          <button class="form__btn" type="button">Log In</button>
+          <button class="form__btn" type="submit">Log In</button>
         </form>
         <button class="modal-close-btn">
           <svg class="modal__icon">

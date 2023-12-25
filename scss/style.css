@@ -1,3 +1,17 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-grey: #7E7E7E;
+  --color-dark-grey: #333333;
+  --color-light-green: #2CCF77;
+  --color-lemon: #E9FF6F;
+  --color-yellow: #F1FABF;
+  --color-header: #A2A0F7;
+  --color-purple: #5421E3;
+  --color-pink: #FF90F4;
+  --color-blue: #349CFB;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -43,8 +57,8 @@ input {
 .back-btn {
   min-width: 150px;
   min-height: 40px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-black);
+  color: var(--color-white);
   padding: 7px 52px;
   border-radius: 5px;
   font-size: 20px;
@@ -52,13 +66,13 @@ input {
   transition: 0.3s;
 }
 .back-btn:hover {
-  background-color: #181818;
+  background-color: var(--color-dark-grey);
   -webkit-transform: translate(3px, 3px);
           transform: translate(3px, 3px);
 }
 
 .user {
-  background-color: #fff;
+  background-color: var(--color-white);
   max-width: 900px;
   min-height: 500px;
   border-radius: 10px;
@@ -78,7 +92,7 @@ input {
 }
 .user__img {
   margin-right: 40px;
-  border: 1px solid #8D8383;
+  border: 1px solid var(--color-grey);
   border-radius: 50%;
 }
 .user__list {
@@ -116,7 +130,7 @@ input {
 }
 
 .header {
-  background-color: #A2A0F7;
+  background-color: var(--color-header);
   padding: 12px 80px;
   position: fixed;
   top: 0;
@@ -138,7 +152,7 @@ input {
 }
 .header__item {
   font-size: 24px;
-  color: #FFFFFF;
+  color: var(--color-white);
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   -webkit-transition: 0.5s;
@@ -147,8 +161,8 @@ input {
   padding-bottom: 5px;
 }
 .header__item:hover {
-  border-bottom: 3px solid #EBFF00;
-  color: #EBFF00;
+  border-bottom: 3px solid var(--color-lemon);
+  color: var(--color-lemon);
 }
 .header__items {
   display: -webkit-box;
@@ -160,9 +174,9 @@ input {
   min-width: 800px;
 }
 .header__link-active {
-  padding-bottom: 5px;
-  border-bottom: 3px solid #EBFF00;
-  color: #EBFF00;
+  padding-bottom: 5pvar --color-lemon;
+  border-bottom: 3px solid var(--color-lemon);
+  color: var(--color-lemon);
 }
 
 .post {
@@ -170,7 +184,7 @@ input {
   height: 200px;
   border-radius: 10px;
   padding: 20px 40px;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   position: relative;
   overflow: auto;
   font-family: "Ubuntu", sans-serif;
@@ -204,7 +218,7 @@ input {
 }
 .post .profile__email {
   font-size: 14px;
-  color: #7E7E7E;
+  color: var(--color-grey);
   margin-top: -4px;
 }
 .post__title {
@@ -228,7 +242,7 @@ input {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: #5421E3;
+  color: var(--color-purple);
 }
 .post .topic {
   display: -webkit-box;
@@ -249,27 +263,27 @@ input {
   position: absolute;
   top: 10px;
   left: 200px;
-  border: 1px solid #7E7E7E;
+  border: 1px solid var(--color-grey);
   border-top: none;
   border-left: none;
 }
 .post .topic-personal {
-  background-color: #9BB0FB;
+  background-color: var(--color-header);
 }
 .post .topic-nature {
-  background-color: #92FF88;
+  background-color: var(--color-light-green);
 }
 .post .topic-movies {
-  background-color: #FFDA17;
+  background-color: var(--color-lemon);
 }
 .post .topic-books {
-  background-color: #349CFB;
+  background-color: var(--color-blue);
 }
 .post .topic-philosophy {
-  background-color: #FFFDD5;
+  background-color: var(--color-yellow);
 }
 .post .topic-studiyng {
-  background-color: #FF90F4;
+  background-color: var(--color-pink);
 }
 .post .comment-btn {
   position: absolute;
@@ -293,12 +307,12 @@ input {
   width: 100%;
   max-width: 290px;
   min-height: 100%;
-  background-color: #000000;
+  background-color: var(--color-black);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  border-left: 2px solid #7E7E7E;
+  border-left: 2px solid var(--color-grey);
   padding: 130px 30px 35px 30px;
 }
 .aside__items {
@@ -313,7 +327,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 15px;
-  background-color: #F1FABF;
+  background-color: var(--color-yellow);
   border-radius: 7px;
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
@@ -326,24 +340,24 @@ input {
   margin-right: 20px;
 }
 .aside__item:hover {
-  background-color: #E9FF6F;
-  -webkit-box-shadow: inset -4px -4px #7E7E7E;
-          box-shadow: inset -4px -4px #7E7E7E;
+  background-color: var(--color-lemon);
+  -webkit-box-shadow: inset -4px -4px var(--color-grey);
+          box-shadow: inset -4px -4px var(--color-grey);
   -webkit-transform: translate(3px, 3px);
           transform: translate(3px, 3px);
 }
 .aside__item-profile {
-  background-color: #7E7E7E;
+  background-color: var(--color-grey);
   margin-top: auto;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 .aside__item-profile:hover {
-  background-color: #333333;
-  color: #fff;
-  -webkit-box-shadow: inset -5px -5px #333333;
-          box-shadow: inset -5px -5px #333333;
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  -webkit-box-shadow: inset -5px -5px var(--color-dark-grey);
+          box-shadow: inset -5px -5px var(--color-dark-grey);
   -webkit-transform: translate(3px, 3px);
           transform: translate(3px, 3px);
 }
@@ -354,7 +368,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F1FABF;
+  background-color: var(--color-yellow);
   border-radius: 7px;
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
@@ -365,18 +379,10 @@ input {
   cursor: pointer;
 }
 .aside__item .modal-open-btn:hover {
-  background-color: #E9FF6F;
+  background-color: var(--color-lemon);
 }
 .aside__item + .aside__item {
   margin-top: 50px;
-}
-
-:root {
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-grey: #7E7E7E;
-  --color-dark-grey: #333333;
-  --color-light-green: #2CCF77;
 }
 
 .backdrop {
@@ -492,8 +498,8 @@ input {
   font-family: "Varta", sans-serif;
   font-weight: 200;
   font-size: 48px;
-  color: #9B0A0A;
-  background-color: #C9FEC8;
+  color: var(--color-white);
+  background-color: var(--color-header);
   max-width: 620px;
   border-radius: 20px;
   padding: 12px 25px;
@@ -502,7 +508,7 @@ input {
 
 .main {
   padding: 150px 0 100px 150px;
-  background-color: #262626;
+  background-color: var(--color-dark-grey);
   min-height: calc(100vh - 95px);
   position: relative;
   min-height: 100vh;
