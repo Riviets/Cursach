@@ -1,0 +1,28 @@
+@import 'utils/fonts';
+@import 'base';
+@import 'components/profile';
+@import 'utils/utils';
+@import 'components/header';
+@import 'components/post';
+@import 'components/aside';
+@import 'components/modal';
+
+.category {
+    font-family: $Varta;
+    font-weight: 200;
+    font-size: 48px;
+    color: #9B0A0A;
+    background-color: #C9FEC8;
+    max-width: 620px;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin-bottom: 60px;
+}
+
+.main {
+    padding: 150px 0 100px 150px;
+    background-color: #262626;
+    min-height: calc(100vh - 95px);
+    position: relative;
+    min-height: 100vh
+}

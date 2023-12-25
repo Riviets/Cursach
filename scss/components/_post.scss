@@ -1,0 +1,121 @@
+.post {
+    width: 520px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: auto;
+    font-family: $ubuntu;
+    cursor: pointer;
+    margin-bottom: 100px;
+
+    .profile {
+        display: flex;
+
+        img {
+            margin-right: 5px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__name {
+            font-size: 16px;
+            font-family: $raleway;
+            font-weight: 600;
+        }
+
+        &__email {
+            font-size: 14px;
+            color: #7E7E7E;
+            margin-top: -4px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        margin: 6px 0;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        font-family: $raleway;
+        font-size: 18px;
+        font-weight: 500;
+        color: #5421E3;
+    }
+
+    .topic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100px;
+        min-height: 20px;
+        font-size: 14px;
+        font-family: $raleway;
+        font-weight: 500;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        border: 1px solid #7E7E7E;
+        border-top: none;
+        border-left: none;
+
+        &-personal {
+            background-color: #9BB0FB;
+        }
+
+        &-nature {
+            background-color: #92FF88;
+        }
+
+        &-movies {
+            background-color: #FFDA17;
+        }
+
+        &-books {
+            background-color: #349CFB;
+        }
+
+        &-philosophy {
+            background-color: #FFFDD5;
+        }
+
+        &-studiyng {
+            background-color: #FF90F4;
+        }
+    }
+
+    .comment-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 16px;
+        transition: .5s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    button {
+        transition: .4s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
