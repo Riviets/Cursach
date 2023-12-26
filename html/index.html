@@ -128,7 +128,7 @@
             </li>
           </ul>
         </aside>
-    <div class="backdrop is-hidden">
+    <div class="backdrop backdrop-login is-hidden">
       <div class="modal">
         <h2 class="modal__title">Log In</h2>
         <form class="form" action="#" autocomplete="off">
@@ -140,7 +140,7 @@
             <label class="label visually-hidden" for="email">Password</label>
             <input class="input" id="password" name="password" type="password" placeholder="Password" minlength="6" maxlength="20" required>
           </div>
-          <p class="form__link-text">Don’t have an account? <a class="form__link" href="#">Sign Up</a> </p>
+          <p class="form__link-text">Don’t have an account? <button type="button" class="form__link modal-sign-open-btn" href="#">Sign Up</button> </p>
           <button class="form__btn" type="submit">Log In</button>
         </form>
         <button class="modal-close-btn">
@@ -150,6 +150,36 @@
         </button>
       </div>
     </div>
+      <div class="backdrop backdrop-signup is-hidden">
+          <div class="modal-signin">
+        <h2 class="modal__title">Sign Up</h2>
+        <form class="form" action="#" autocomplete="off">
+          <div class="modal__field">
+            <label class="label visually-hidden" for="name">First Name</label>
+            <input class="input" id="name" name="name" type="text" placeholder="First Name" required>
+          </div>
+          <div class="modal__field">
+            <label class="label visually-hidden" for="surname">Last Name</label>
+            <input class="input" id="surname" name="surname" type="text" placeholder="Last Name" required>
+          </div>
+          <div class="modal__field">
+            <label class="label visually-hidden" for="email">Email Address</label>
+            <input class="input" id="email" name="email" type="email" placeholder="Email Address" required>
+          </div>
+          <div class="modal__field">
+            <label class="label visually-hidden" for="email">Password</label>
+            <input class="input" id="password" name="password" type="password" placeholder="Password" minlength="6" maxlength="20" required>
+          </div>
+          <p class="form__link-text">Already have an account? <button type="button" class="form__link modal-open-btn" href="#">Log In</button> </p>
+          <button class="form__btn" type="submit">Sign up</button>
+        </form>
+        <button class="modal-close-btn">
+          <svg class="modal__icon">
+            <use href="/images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+      </div>
     <script src="../js/modal.js"></script>
   </body>
 </html>

@@ -1,10 +1,26 @@
-const modal = document.querySelector('.backdrop')
-const modalOpenBtn = document.querySelector('.modal-open-btn')
-const modalCloseBtn = document.querySelector('.modal-close-btn')
+const modalLogin = document.querySelector('.backdrop-login');
+const modalSign = document.querySelector('.backdrop-signup');
+const modalLoginOpenBtns = document.querySelectorAll('.modal-open-btn');
+const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+const modalSignOpenBtns = document.querySelectorAll('.modal-sign-open-btn');
 
-const modalToggle = function () {
-    modal.classList.toggle('is-hidden')
-}
+modalSignOpenBtns.forEach(el => {
+    el.addEventListener('click', () => {
+        modalLogin.classList.add('is-hidden');
+        modalSign.classList.remove('is-hidden');
+    });
+});
 
-modalOpenBtn.addEventListener('click', modalToggle);
-modalCloseBtn.addEventListener('click', modalToggle);
+modalLoginOpenBtns.forEach(el => {
+    el.addEventListener('click', () => {
+        modalLogin.classList.remove('is-hidden');
+        modalSign.classList.add('is-hidden');
+    });
+});
+
+modalCloseBtns.forEach(el => {
+    el.addEventListener('click', () => {
+        modalLogin.classList.add('is-hidden')
+        modalSign.classList.add('is-hidden')
+    })
+})

@@ -445,6 +445,18 @@ input {
   top: 20px;
   right: 20px;
 }
+.modal-signin {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 600px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 30px 35px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
 
 .form {
   display: -webkit-box;
