@@ -7,6 +7,7 @@
 @import 'components/post';
 @import 'components/aside';
 @import 'components/modal';
+@import 'components/create';
 
 .category {
     font-family: $Varta;
@@ -26,4 +27,10 @@
     min-height: calc(100vh - 95px);
     position: relative;
     min-height: 100vh
+}
+
+.title {
+    font-family: $raleway;
+    font-weight: 600;
+    margin-bottom: 35px;
 }

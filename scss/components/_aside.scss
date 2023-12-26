@@ -11,6 +11,9 @@
     padding: 130px 30px 35px 30px;
 
     &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
         position: relative;
         min-height: 600px;
     }

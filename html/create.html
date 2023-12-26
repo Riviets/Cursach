@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форум</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght:400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/slick.css" />
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="/images/logo.svg" alt="Logo" />
+          </a>
+          <nav>
+            <ul class="header__items">
+              <li class="header__item">
+                <a class="header__link" href="personal.html">Personal</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="nature.html">Nature</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="movies.html">Movies</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="books.html">Books</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="philosophy.html">Philosophy</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="studying.html">Studying</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <a class="back-btn" href="#">Back</a>
+      </div>
+      <section class="create">
+        <h2 class="title">Creating a Discussion</h2>
+        <div class="create__inner">
+          <form class="create__form" is="create__form"" action="#" autocomplete="off">
+            <div class="form__field">
+              <label class="label visually-hidden" for="discussionTitle">Title</label>
+              <input
+                class="input"
+                id="discussionTitle"
+                name="discussionTitle"
+                type="text"
+                placeholder="Title"
+                minlength="5"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="label visually-hidden" for="discussionTopic">Topic</label>
+              <select class="create__topic" name="discussionTopic" id="discussionTopic" required>
+                <option class="form__topic-option" value="" disabled selected>Topic</option>
+                <option class="form__topic-option" value="Personal">Personal</option>
+                <option class="form__topic-option" value="Nature">Nature</option>
+                <option class="form__topic-option" value="Movies">Movies</option>
+                <option class="form__topic-option" value="Books">Books</option>
+                <option class="form__topic-option" value="Philosophy">Philosophy</option>
+                <option class="form__topic-option" value="Studying">Studying</option>
+                <option class="form__topic-option" value="Other">Other</option>
+              </select>
+            </div>
+            <textarea
+              class="form__field create__comment"
+              name="discussionText"
+              id="discussionText"
+              cols="30"
+              rows="5"
+              placeholder="Text"
+              minlength="20"
+              maxlength="200"
+              required
+            ></textarea>
+            <button class="create__btn" id="createDiscussionBtn" type="submit">Create</button>
+          </form>
+          <img class="create__img" src="/images/create.png" alt="Hands typing" />
+        </div>
+      </section>
+    </main>
+    <script src="../js/modal.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

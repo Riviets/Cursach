@@ -1,20 +1,16 @@
-.main {
-    padding: 42px 0 0 0;
-}
-
 .back-btn {
-    min-width: 150px;
-    min-height: 40px;
     background-color: var(--color-black);
+    border: 2px solid var(--color-black);
     color: var(--color-white);
     padding: 7px 52px;
     border-radius: 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: background-color .3s;
+    transform: translate(-40px, -25px);
+    display: inline-block;
 
     &:hover {
-        background-color: var(--color-dark-grey);
-        transform: translate(3px, 3px);
+        background-color: transparent;
     }
 }
 
