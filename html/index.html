@@ -20,7 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght:400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../scss/slick.css" />
     <link rel="stylesheet" href="../scss/style.css" />
   </head>
   <body>
@@ -156,24 +155,24 @@
     <div class="backdrop backdrop-login is-hidden">
       <div class="modal">
         <h2 class="modal__title">Log In</h2>
-        <form class="form" action="#" autocomplete="off">
-          <div class="modal__field">
-            <label class="label visually-hidden" for="email">Email Address</label>
+        <form id="loginForm" class="form" action="#" autocomplete="off">
+          <div class="form__field">
+            <label class="label visually-hidden" for="loginEmail">Email Address</label>
             <input
               class="input"
-              id="email"
-              name="email"
+              id="loginEmail"
+              name="loginEmail"
               type="email"
               placeholder="Email Address"
               required
             />
           </div>
-          <div class="modal__field">
-            <label class="label visually-hidden" for="email">Password</label>
+          <div class="form__field">
+            <label class="label visually-hidden" for="loginPassword">Password</label>
             <input
               class="input"
-              id="password"
-              name="password"
+              id="loginPassword"
+              name="loginPassword"
               type="password"
               placeholder="Password"
               minlength="6"
@@ -197,46 +196,46 @@
     <div class="backdrop backdrop-signup is-hidden">
       <div class="modal-signin">
         <h2 class="modal__title">Sign Up</h2>
-        <form class="form" action="#" autocomplete="off">
-          <div class="modal__field">
-            <label class="label visually-hidden" for="name">First Name</label>
+        <form id="signupForm" class="form" action="#" autocomplete="off">
+          <div class="form__field">
+            <label class="label visually-hidden" for="signupName">First Name</label>
             <input
               class="input"
-              id="name"
-              name="name"
+              id="signupName"
+              name="signupName"
               type="text"
               placeholder="First Name"
               required
             />
           </div>
-          <div class="modal__field">
-            <label class="label visually-hidden" for="surname">Last Name</label>
+          <div class="form__field">
+            <label class="label visually-hidden" for="signupSurname">Last Name</label>
             <input
               class="input"
-              id="surname"
-              name="surname"
+              id="signupSurname"
+              name="signupSurname"
               type="text"
               placeholder="Last Name"
               required
             />
           </div>
-          <div class="modal__field">
-            <label class="label visually-hidden" for="email">Email Address</label>
+          <div class="form__field">
+            <label class="label visually-hidden" for="signupEmail">Email Address</label>
             <input
               class="input"
-              id="email"
-              name="email"
+              id="signupEmail"
+              name="signupEmail"
               type="email"
               placeholder="Email Address"
               required
             />
           </div>
-          <div class="modal__field">
-            <label class="label visually-hidden" for="email">Password</label>
+          <div class="form__field">
+            <label class="label visually-hidden" for="signupPassword">Password</label>
             <input
               class="input"
-              id="password"
-              name="password"
+              id="signupPassword"
+              name="signupPassword"
               type="password"
               placeholder="Password"
               minlength="6"
@@ -258,6 +257,7 @@
       </div>
     </div>
     <script src="../js/modal.js"></script>
+    <script src="/js/account.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

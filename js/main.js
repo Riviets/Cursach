@@ -1,3 +1,4 @@
+
 class Discussion {
     constructor(title, topic, text) {
         this.title = title;
@@ -45,6 +46,7 @@ const backBtns = document.querySelectorAll('.back-btn');
 
 backBtns.forEach((el) => {
     el.addEventListener('click', () => {
+        console.log('Click event triggered!');
         window.history.back();
     });
 });
